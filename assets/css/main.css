@@ -655,6 +655,42 @@ h6 {
   font-size: 0.7em;
 }
 
+.hobbies-list ul {
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0; /* Remove default padding */
+  display: flex;
+  flex-wrap: wrap; /* Allows list items to wrap onto the next line */
+  justify-content: space-around; /* Distributes space around items */
+}
+
+.hobbies-list li {
+  margin: 5px 10px; /* Space out the list items */
+  position: relative; /* Allows absolute positioning of the icon */
+  padding-left: 30px; /* Space for the icon */
+}
+
+.hobbies-list i {
+  position: absolute;
+  left: 0; /* Align icons to the left */
+  top: 50%; /* Center icons vertically */
+  transform: translateY(-50%); /* Ensure exact vertical centering */
+  font-size: 20px; /* Icon size - adjust as needed */
+  width: 25px; /* Width of the icon area */
+  text-align: center; /* Center the icon if it's not full width */
+}
+
+/* Replace '.icon-xxxx' with the actual classes from your icon library */
+.icon-surfing:before { content: '\f3c4'; } /* example icon content code */
+/* Add additional icon content codes for each hobby */
+
+/* Add hover effect for list items */
+.hobbies-list li:hover {
+  background-color: #f2f2f2; /* Light grey background on hover */
+  border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+
+
 @media screen and (max-width: 736px) {
   h2 {
     font-size: 1em;
@@ -4855,8 +4891,8 @@ body.is-preload #banner p {
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left; */
 /* } */
-/* 
-/* try this  
+/*
+/* try this
 .carouselbox {
   height: 250px;
   width: auto;
@@ -4924,7 +4960,7 @@ body.is-preload #banner p {
 } */
 
 /* trying to get the reel moving in circles */
-/* 
+/*
 $level2-height: 150px;
 $level2-width: 110px;
 $level1-height: 180px;
@@ -5071,7 +5107,7 @@ $level2-left: 50px;
 } */
 
 /* new carousel */
-/* 
+/*
 img {
   min-width: 100%;
 }
@@ -5200,7 +5236,7 @@ img {
     right top,
     from(rgba(0, 0, 0, 0.5)),
     to(rgba(0, 0, 0, 0.0001))
-  ); 
+  );
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.5) 0%,
@@ -5228,7 +5264,7 @@ img {
     right top,
     from(rgba(0, 0, 0, 0.0001)),
     to(rgba(0, 0, 0, 0.5))
-  ); 
+  );
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.0001) 0%,
